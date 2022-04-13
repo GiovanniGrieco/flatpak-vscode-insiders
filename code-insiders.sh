@@ -67,4 +67,5 @@ fi
 exec env ELECTRON_RUN_AS_NODE=1 PATH="${PATH}:${XDG_DATA_HOME}/node_modules/bin" \
   /app/bin/zypak-wrapper.sh /app/extra/vscode-insiders/code-insiders /app/extra/vscode-insiders/resources/app/out/cli.js \
   --ms-enable-electron-run-as-node --extensions-dir=${XDG_DATA_HOME}/vscode-insiders/extensions \
+  --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland \
   "$@" ${WARNING_FILE}
