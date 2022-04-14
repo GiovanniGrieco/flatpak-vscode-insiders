@@ -12,6 +12,6 @@ git checkout wayland_support
 git rebase beta
 git push --force
 
-flatpak remove --assumeyes com.visualstudio.code.insiders
-./build.sh
-./install.sh
+./tools/uninstall.sh
+./tools/build.sh
+./tools/install.sh
